@@ -1,0 +1,6 @@
+name = CK WYSIWYG Tweaks
+description = helper module to improve the WYSIWYG CK Editor experience
+dependencies[] = wysiwyg
+package = User interface
+core = 7.x
+version = 7.x-1.x
