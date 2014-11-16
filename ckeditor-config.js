@@ -8,6 +8,6 @@ CKEDITOR.editorConfig = function( config ) {
   config.bodyClass = 'node';
 
   // allow i tags to be empty (for font awesome)
-  config.dtd.$removeEmpty['i'] = false
+  CKEDITOR.dtd.$removeEmpty['i'] = false;
   
 }
