@@ -9,5 +9,10 @@ CKEDITOR.editorConfig = function( config ) {
 
   // allow i tags to be empty (for font awesome)
   CKEDITOR.dtd.$removeEmpty['i'] = false;
+ 
+  // Stops scayt spellchecker and uses browser default
+  config.disableNativeSpellChecker = false;
+  config.removePlugins = 'scayt,menubutton,liststyle,tabletools,contextmenu';
+  config.browserContextMenuOnCtrl = true;
   
 }
