@@ -16,5 +16,19 @@ CKEDITOR.editorConfig = function( config ) {
   config.disableNativeSpellChecker = false;
   config.removePlugins = 'scayt,menubutton,liststyle,tabletools,contextmenu';
   config.browserContextMenuOnCtrl = true;
+  // kills empty paragraphs i.e. <p>&nbsp;</p>
+  config.autoParagraph = false
   
+  
+  config.stylesSet =
+  [
+    // Configures the styles available in the styles dropdown menu
+
+    // Each style is an object whose properties define how it is displayed
+    // in the dropdown, as well as what it outputs as html into the editor.
+    { name : 'BIG', element : 'span', attributes : { 'class' : 'big' } },
+    { name : 'Float Right', element : 'div', attributes : { 'style' : 'float:right;' } },
+    { name : 'Float Left', element : 'div', attributes : { 'style' : 'float:left;' } },
+  ];
+
 }
